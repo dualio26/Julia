@@ -39,13 +39,28 @@
 </html>
 
 <script>
-      var folder = "images";
+      var folder = "images/";
     $.ajax({
         url: folder,
         success: function(data) {
             $(data).find("a").attr("href", function(i, val) {
-                $(".mydiv").append('<img class="set1" src="' + val + '">');
+                if (i >= 3){
+                    $(".mydiv").append('<img class="set1" src="' + val + '">');
+                }
             });
         }
     });
 </script>
+
+
+var folder = "images";
+$.ajax({
+    url: folder,
+    success: function(data) {
+        $(data).find("a").attr("href", function(i, val) {
+            if (i >= 3){
+                $(".mydiv").append('<img class="set1" src="' + val + '">');
+            }
+        });
+    }
+});
