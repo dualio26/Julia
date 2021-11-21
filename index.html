@@ -44,9 +44,7 @@
         url: folder,
         success: function(data) {
             $(data).find("a").attr("href", function(i, val) {
-                if (i >= 3){
-                    $(".mydiv").append('<img class="set1" src="' + val + '">');
-                }
+                $(".mydiv").append('<img class="set1" src="' + val + '">');
             });
         }
     });
