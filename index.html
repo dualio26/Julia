@@ -18,16 +18,17 @@
       rel="stylesheet"
     />
     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <title>Julia Sternkopf Artist</title>
   </head>
   <body>
     <div class="container">
       <div class="header">
         <img src="Logo/ArtLogo.png" alt="ArtLogo" />
-        <h1>Julia Sternkopf Artist</h1>
+        <h1>Artist</h1>
         <h3>Painting the Great Outdoors</h3>
       </div>
       <div class="main">
@@ -39,28 +40,17 @@
 </html>
 
 <script>
-      var folder = "images/";
-    $.ajax({
-        url: folder,
-        success: function(data) {
-            $(data).find("a").attr("href", function(i, val) {
-                if (i >= 3){
-                    $(".mydiv").append('<img class="set1" src="' + val + '">');
-                }
-            });
-        }
-    });
-</script>
-
-
-var folder = "images";
-$.ajax({
+  var folder = "images";
+  $.ajax({
     url: folder,
-    success: function(data) {
-        $(data).find("a").attr("href", function(i, val) {
-            if (i >= 3){
-                $(".mydiv").append('<img class="set1" src="' + val + '">');
-            }
+    success: function (data) {
+      $(data)
+        .find("a")
+        .attr("href", function (i, val) {
+          if (i >= 3) {
+            $(".mydiv").append('<img class="set1" src="' + val + '" />');
+          }
         });
-    }
-});
+    },
+  });
+</script>
