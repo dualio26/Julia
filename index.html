@@ -22,7 +22,7 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <title>Julia Sternkopf Artist</title>
+    <title>Artist</title>
   </head>
   <body>
     <div class="container">
@@ -40,17 +40,19 @@
 </html>
 
 <script>
-  var folder = "images";
-  $.ajax({
-    url: folder,
-    success: function (data) {
-      $(data)
-        .find("a")
-        .attr("href", function (i, val) {
-          if (i >= 3) {
-            $(".mydiv").append('<img class="set1" src="' + val + '" />');
-          }
-        });
-    },
-  });
+var folder = "images";
+$.ajax({
+  url: folder,
+  success: function (data) {
+    $(data)
+      .find("a")
+      .attr("href", function (i, val) {
+        if (i >= 3) {
+          $(".mydiv").append('<img class="set1" src="' + val + '" />');
+        }
+      });
+  },
+});
 </script>
+
+

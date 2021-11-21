@@ -1,5 +1,6 @@
 html{
     font-family: 'Cinzel', serif;
+    background-image: url(Logo/wallpaper.jpg);
 }
 
 body{
@@ -18,8 +19,8 @@ body{
 
 .set1{
     width: 30%;
-    border: 50px solid transparent;
-    padding: 0;
-    margin: 2%;
-    border-image: url(frames/istockphoto-162714310-612x612.jpg) 62 round;
+}
+
+.mydiv{
+    display: block;
 }
