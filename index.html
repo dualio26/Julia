@@ -33,26 +33,26 @@
       </div>
       <div class="main">
         <div></div>
-        <div class="mydiv"></div>
+        <div class="mydiv">
+          <div>
+            <img src="images/1.jpg" alt="" class="fancy-border"/>
+            <img src="images/allan-dias-KZppUaH5u-8-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/hanna-postova-vUuThOgxETY-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/hanna-postova-xU34s6wuxyU-unsplash.jpg" alt="" class="fancy-border"/>
+          </div>
+          <div>
+            <img src="images/keila-hotzel-R8tIWN5616g-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/lacie-slezak-yHG6llFLjS0-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/mohammad-metri-vGOqRDtfZPU-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/petr-ovralov-qQ01rvKkE0w-unsplash.jpg" alt="" class="fancy-border"/>
+          </div>
+          <div>
+            <img src="images/rachel-coyne-l1LT-rVqbDw-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/ryoji-iwata-_dVxl4eE1rk-unsplash.jpg" alt="" class="fancy-border"/>
+            <img src="images/stormseeker-rX12B5uX7QM-unsplash.jpg" alt="" class="fancy-border"/>
+          </div>
+        </div>
       </div>
     </div>
   </body>
 </html>
-
-<script>
-var folder = "images";
-$.ajax({
-  url: folder,
-  success: function (data) {
-    $(data)
-      .find("a")
-      .attr("href", function (i, val) {
-        if (i >= 3) {
-          $(".mydiv").append('<img class="set1" src="' + val + '" />');
-        }
-      });
-  },
-});
-</script>
-
-
