@@ -1,5 +1,5 @@
 {
-  "name": "Julias-Website",
+  "name": "julias-website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
+    "d3": "^7.2.1",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
@@ -36,5 +37,12 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0"
-  }
+  },
+  "description": "## Build Setup",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
 }

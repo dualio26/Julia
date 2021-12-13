@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import data from '~/content/data.json';
 export default {
   methods:{
     hideArtist() {
@@ -39,6 +40,7 @@ export default {
         x.style.display = "block";
         y.style.display = "none";
         z.style.display = "none";
+        console.log(data)
       } else {
         x.style.display = "none";
       }
@@ -66,7 +68,7 @@ export default {
       } else {
         y.style.display = "none";
       }
-    }
+    },
   }
 }
 </script>
