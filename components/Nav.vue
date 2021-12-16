@@ -2,7 +2,7 @@
 <template>
   <div class="w-full mx-auto sm:px-6 lg:px-8 my-auto">
     <div
-      class="mt-8 w-1/2 mx-auto bg-black overflow-hidden shadow sm:rounded-lg p-6 text-white"
+     class="mt-8 w-1/2 mx-auto bg-black overflow-hidden shadow rounded p-6 text-white hidden lg:block"
     >
       <h2 class="text-2xl leading-7 font-semibold text-center">
         Julia's ArtBoard
@@ -53,7 +53,6 @@ export default {
     const artTitles = []
     let i = 0
     const len = data.length
-    console.log(len)
     while (i !== len) {
       const temp = artworks[i]
       if (temp.Category === 'Hexagon') {
@@ -62,7 +61,6 @@ export default {
       }
       i++
     }
-    console.log(artTitles)
     document.getElementById('PortraitContent').innerHTML = artTitles
   },
   methods: {
