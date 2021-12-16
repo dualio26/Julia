@@ -1,9 +1,6 @@
 .MenuButtons{
-    display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .navbar {
@@ -64,8 +61,4 @@
   
   .dropdown:hover .dropdown-content {
     display: block;
-  }
-
-  @media () {
-    
   }
