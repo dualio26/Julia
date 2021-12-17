@@ -5,7 +5,7 @@
     <div class="dropdown">
       <a id="ArtTypes" class="Arts"><Button title="ArtWork" /></a>
       <div class="dropdown-content rounded">
-        <a @click="hideArtist()">About Artist</a>
+        <a @click="hideArtist()">Landscape</a>
         <a @click="hideHexagon()">Hexagon</a>
         <a @click="hidePortraits()">Portraits</a>
       </div>
@@ -23,7 +23,7 @@ export default {
       window.location.reload()
     },
     hideArtist() {
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       if (x.style.display === 'none') {
@@ -35,7 +35,7 @@ export default {
       }
     },
     hideHexagon() {
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       if (z.style.display === 'none') {
@@ -47,7 +47,7 @@ export default {
       }
     },
     hidePortraits() {
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       if (y.style.display === 'none') {
