@@ -1,7 +1,21 @@
 <template>
   <div>
     <Nav />
-    <div class="pt-12 mx-auto w-10/12">
+    <div class="pt-12 mx-auto w-10/12 hidden sm:block">
+      <div id="AboutArtist" class="AboutArtist hidden">
+        <h1 class="text-center">About Artist</h1>
+        <p id="AboutContent"></p>
+      </div>
+      <div id="Hexagon" class="Hexagon hidden">
+        <h1 class="text-center">Hexgon</h1>
+        <p id="HexagonContent"></p>
+      </div>
+      <div id="Portraits" class="Portraits hidden">
+        <h1 class="text-center">Portraits</h1>
+        <p id="PortraitContent"></p>
+      </div>
+    </div>
+    <div class="block sm:hidden">
       <div id="AboutArtist" class="AboutArtist hidden">
         <h1 class="text-center">About Artist</h1>
         <p id="AboutContent"></p>
@@ -21,7 +35,7 @@
 <script>
 import data from '~/content/data.json'
 export default {
-   mounted() {
+  mounted() {
     const artworks = data
     const artTitles = []
     let i = 0

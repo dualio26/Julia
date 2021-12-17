@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-6 place-content-center">
+  <div class="grid grid-cols-6 place-content-center block sm:hidden">
     <i class="fas fa-home mx-auto fa-lg"></i
     ><i class="fas fa-user mx-auto fa-lg"></i
     ><i class="far fa-image mx-auto fa-lg"></i
@@ -10,5 +10,5 @@
 </template>
 
 <style scoped>
-@import 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css';
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 </style>
