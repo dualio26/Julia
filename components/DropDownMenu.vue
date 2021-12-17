@@ -8,7 +8,3 @@
     ><i class="fas fa-sms mx-auto fa-lg"></i>
   </div>
 </template>
-
-<style scoped>
-@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
-</style>
