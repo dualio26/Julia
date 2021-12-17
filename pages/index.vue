@@ -13,7 +13,7 @@
 
         <div class="mt-4 pt-4 border-t border-dashed">
           <div class="grid grid-cols-6 place-content-center block sm:hidden">
-            <i class="fas fa-home mx-auto fa-lg"></i
+            <a @click="reload()"><i class="fas fa-home mx-auto fa-lg"></i></a
             ><i class="fas fa-user mx-auto fa-lg"></i
             ><i class="far fa-image mx-auto fa-lg"></i
             ><i class="fas fa-palette mx-auto fa-lg"></i
