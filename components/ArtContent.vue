@@ -21,7 +21,7 @@
     <div class="pt-12 mx-auto w-10/12 hidden sm:block">
       <div id="AboutArtist" class="AboutArtist hidden">
         <h1 class="text-center">Landscape</h1>
-        <p id="AboutContent"></p>
+        <div id="AboutContent" class="grid grid-cols-3 spacing-3 gap-12"><ArtPeices image="Roses" title="First Peice" content="About the peice" dimensions="(x+2)(x-2)" price=123 /><ArtPeices image="Roses" title="First Peice" content="About the peice" dimensions="(x+2)(x-2)" price=123 /><ArtPeices image="Roses" title="First Peice" content="About the peice" dimensions="(x+2)(x-2)" price=123 /></div>
       </div>
       <div id="Hexagon" class="Hexagon hidden">
         <h1 class="text-center">Hexgon</h1>
