@@ -11,17 +11,15 @@
 
     <div class="mt-4 pt-4 border-t border-dashed">
       <div class="grid grid-cols-6 place-content-center block sm:hidden">
-        <a class="mx-auto" @click="reload()"
+        <a class="mx-auto" @click="hideHome()"
           ><i class="fas fa-home fa-lg"></i></a
-        ><i class="fas fa-user mx-auto fa-lg"></i
         ><i class="far fa-image mx-auto fa-lg"></i
         ><i class="fas fa-palette mx-auto fa-lg"></i
         ><i class="fab fa-blogger mx-auto fa-lg"></i
         ><i class="fas fa-sms mx-auto fa-lg"></i>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">
-        <a @click="reload()"><Button /></a>
-        <a href="/home"><Button title="About" /></a>
+        <a @click="hideHome()"><Button /></a>
         <div class="dropdown">
           <a id="ArtTypes" class="Arts" @click="ShowAll()"><Button title="ArtWork" /></a>
           <div class="dropdown-content rounded">
@@ -79,8 +77,9 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
+      const b = document.getElementById('HomeContent')
       if (x.style.display === 'none') {
-        console.log("INNS")
+        b.style.display = 'none'
         a.style.display = 'none'
         x.style.display = 'block'
         y.style.display = 'none'
@@ -89,13 +88,30 @@ export default {
         x.style.display = 'none'
       }
     },
-    hideHexagon() {
-      console.log('help')
+    hideHome() {
       const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
+      const b = document.getElementById('HomeContent')
+      if (b.style.display === 'none') {
+        b.style.display = 'grid'
+        a.style.display = 'none'
+        x.style.display = 'none'
+        y.style.display = 'none'
+        z.style.display = 'none'
+      } else {
+        x.style.display = 'none'
+      }
+    },
+    hideHexagon() {
+      const x = document.getElementById('Landscape')
+      const y = document.getElementById('Portraits')
+      const z = document.getElementById('Hexagon')
+      const a = document.getElementById('AllArt')
+      const b = document.getElementById('HomeContent')
       if (z.style.display === 'none') {
+        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'none'
         z.style.display = 'block'
@@ -109,7 +125,9 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
+      const b = document.getElementById('HomeContent')
       if (y.style.display === 'none') {
+        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'block'
         z.style.display = 'none'
@@ -123,7 +141,9 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
+      const b = document.getElementById('HomeContent')
       if (a.style.display === 'none') {
+        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'none'
         z.style.display = 'none'
