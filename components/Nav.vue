@@ -1,8 +1,8 @@
 <template>
   <div
-    class="sm:mt-8 w-full sm:w-8/12 mx-auto bg-black overflow-hidden shadow sm:rounded p-6 text-white"
+    class="w-full bg-black overflow-hidden shadow p-6 text-white"
   >
-    <div class="sm:w-full mr-0">
+    <div class="w-full mr-0">
       <h2 class="w-full text-2xl leading-7 font-semibold sm:text-center">
         Julia's ArtBoard
       </h2>
