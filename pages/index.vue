@@ -3,6 +3,7 @@
     <div class="w-full mx-auto sm:px-6 lg:px-8 my-auto">
       <Nav />
     </div>
+    <HomeContent />
     <ArtContent />    
     <Footer />
   </div>

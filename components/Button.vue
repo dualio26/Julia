@@ -1,6 +1,6 @@
 <template>
     <button class="text-white p-1 rounded m-1">
-        {{ title }}
+        <p>{{ title }}</p>
     </button>
 </template>
 

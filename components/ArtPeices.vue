@@ -1,10 +1,10 @@
 <template>
-  <div>
-      <img :src="require(`../assets/images/${image}.jpg`)" alt="Art image">
-    <div>
+  <div class="Peice rounded p-6">
+    <img :src="require(`../assets/images/${image}.jpg`)" alt="Art image" class="rounded-t " />
+    <div class="pt-4">
       <h1>{{ title }}</h1>
       <p>{{ content }}</p>
-      <p>{{ dimensions }}</p>
+      <p>{{ dimensions }} mm</p>
       <p>${{ price }}</p>
     </div>
   </div>

@@ -37,13 +37,13 @@
     </div>
     <div class="pt-8 block sm:hidden">
       <div class="grid grid-cols-3 gap-10 mx-auto w-2/5">
-        <a class="mx-auto w-fit" @click="hideArtist1()"
+        <a class="mx-auto w-fit" @click="hideArtist()"
           ><i class="fas fa-mountain fa-2x"></i
         ></a>
-        <a class="mx-auto w-fit" @click="hideHexagon1()"
+        <a class="mx-auto w-fit" @click="hideHexagon()"
           ><i class="fas fa-square fa-2x"></i
         ></a>
-        <a class="mx-auto w-fit" @click="hidePortraits1()"
+        <a class="mx-auto w-fit" @click="hidePortraits()"
           ><i class="fas fa-portrait fa-2x"></i
         ></a>
       </div>
@@ -69,17 +69,16 @@ export default {
     }
     console.log(artTitles)
     document.getElementById('PortraitContent').innerHTML = artTitles
-    document.getElementById('PortraitContent1').innerHTML = artTitles
   },
   methods: {
     reload() {
       window.location.reload()
     },
     hideArtist() {
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
-      const a = document.getElementById('AllContent')
+      const a = document.getElementById('AllArt')
       if (x.style.display === 'none') {
         console.log("INNS")
         a.style.display = 'none'
@@ -92,10 +91,10 @@ export default {
     },
     hideHexagon() {
       console.log('help')
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
-      const a = document.getElementById('AllContent')
+      const a = document.getElementById('AllArt')
       if (z.style.display === 'none') {
         x.style.display = 'none'
         y.style.display = 'none'
@@ -106,10 +105,10 @@ export default {
       }
     },
     hidePortraits() {
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
-      const a = document.getElementById('AllContent')
+      const a = document.getElementById('AllArt')
       if (y.style.display === 'none') {
         x.style.display = 'none'
         y.style.display = 'block'
@@ -120,10 +119,10 @@ export default {
       }
     },
     ShowAll() {
-      const x = document.getElementById('AboutArtist')
+      const x = document.getElementById('Landscape')
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
-      const a = document.getElementById('AllContent')
+      const a = document.getElementById('AllArt')
       if (a.style.display === 'none') {
         x.style.display = 'none'
         y.style.display = 'none'
@@ -131,43 +130,6 @@ export default {
         a.style.display = 'block'
       } else {
         a.style.display = 'none'
-      }
-    },
-    hideArtist1() {
-      const x = document.getElementById('AboutArtist1')
-      const y = document.getElementById('Portraits1')
-      const z = document.getElementById('Hexagon1')
-      if (x.style.display === 'none') {
-        x.style.display = 'block'
-        y.style.display = 'none'
-        z.style.display = 'none'
-      } else {
-        x.style.display = 'none'
-      }
-    },
-    hideHexagon1() {
-      console.log('help')
-      const x = document.getElementById('AboutArtist1')
-      const y = document.getElementById('Portraits1')
-      const z = document.getElementById('Hexagon1')
-      if (z.style.display === 'none') {
-        x.style.display = 'none'
-        y.style.display = 'none'
-        z.style.display = 'block'
-      } else {
-        z.style.display = 'none'
-      }
-    },
-    hidePortraits1() {
-      const x = document.getElementById('AboutArtist1')
-      const y = document.getElementById('Portraits1')
-      const z = document.getElementById('Hexagon1')
-      if (y.style.display === 'none') {
-        x.style.display = 'none'
-        y.style.display = 'block'
-        z.style.display = 'none'
-      } else {
-        y.style.display = 'none'
       }
     },
   },
