@@ -1,7 +1,7 @@
 <template>
   <div id="HomeContent" class="pt-12 mx-auto w-10/12 block h-fit">
-    <HomeCarousel />
-    <div>
+    <HomeCarousel image1="Roses" image2="Roses" image3="Roses" image4="Roses"/>
+    <div class="pt-8">
       <h2 class="text-center text-2xl">About my Art</h2>
       <p class="w-3/4 mx-auto pt-6">
         Hi, My Name is Julia Sternkopf. <br />
@@ -17,3 +17,5 @@
     </div>
   </div>
 </template>
+
+

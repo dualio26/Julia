@@ -1,6 +1,10 @@
 <template>
   <div class="Peice rounded p-6">
-    <img :src="require(`../assets/images/${image}.jpg`)" alt="Art image" class="rounded-t " />
+    <img
+      :src="require(`../assets/images/${image}.jpg`)"
+      alt="Art image"
+      class="rounded-t"
+    />
     <div class="pt-4">
       <h1>{{ title }}</h1>
       <p>{{ content }}</p>
@@ -35,7 +39,7 @@ export default {
     },
     price: {
       type: String,
-      default: "5",
+      default: '5',
       required: true,
     },
   },
