@@ -87,9 +87,9 @@ p{
   background-color: #ddd;
 }
 
-.Peice:hover{
-  transform: scale(150%);
-  box-shadow: 0 12px 24px 0 rgba(255, 92, 247, 0.356);
+.Peice:focus{
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 * {

@@ -5,7 +5,7 @@
         id="carousel__slide1"
         tabindex="0"
         class="carousel__slide"
-        style="background-color: rgba(0, 0, 0, 0)"
+        style="background-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0);"
       >
         <div class="carousel__snapper">
           <img
@@ -22,7 +22,7 @@
         id="carousel__slide2"
         tabindex="0"
         class="carousel__slide"
-        style="background-color: rgba(0, 0, 0, 0)"
+        style="background-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0);"
       >
         <div class="carousel__snapper"></div>
         <img

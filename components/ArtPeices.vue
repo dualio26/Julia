@@ -1,7 +1,7 @@
 <template>
-  <div class="Peice rounded p-6">
+  <a href="#" class="Peice rounded p-6">
     <img
-      :src="require(`../assets/images/${image}.jpg`)"
+      :src="require(`../assets/images/${image}.jpeg`)"
       alt="Art image"
       class="rounded-t"
     />
@@ -11,7 +11,7 @@
       <p>{{ dimensions }} mm</p>
       <p>${{ price }}</p>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
