@@ -12,7 +12,7 @@
             :src="require(`../assets/images/${image1}.jpg`)"
             alt=""
             class="mx-auto"
-            style="height: inherit"
+            style="height: 100%"
           />
           <a href="#carousel__slide4" class="carousel__prev"></a>
           <a href="#carousel__slide2" class="carousel__next"></a>
@@ -45,7 +45,7 @@
             :src="require(`../assets/images/${image3}.jpg`)"
             alt=""
             class="mx-auto"
-            style="height: inherit"
+            style="height: 100%"
           />
         <a href="#carousel__slide2" class="carousel__prev"></a>
         <a href="#carousel__slide4" class="carousel__next"></a>
@@ -61,7 +61,7 @@
             :src="require(`../assets/images/${image4}.jpg`)"
             alt=""
             class="mx-auto"
-            style="height: inherit"
+            style="height: 100%"
           />
         <a href="#carousel__slide3" class="carousel__prev"></a>
         <a href="#carousel__slide1" class="carousel__next"></a>

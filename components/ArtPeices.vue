@@ -1,17 +1,17 @@
 <template>
-  <a href="#" class="Peice rounded p-6">
+  <div class="Peice rounded p-3 m-4" style="height: fit-content;">
     <img
-      :src="require(`../assets/images/${image}.jpeg`)"
+      :src="require(`../assets/images/${image}.jpg`)"
       alt="Art image"
       class="rounded-t"
     />
-    <div class="pt-4">
+    <div class="Artinfo pt-4">
       <h1>{{ title }}</h1>
       <p>{{ content }}</p>
       <p>{{ dimensions }} mm</p>
       <p>${{ price }}</p>
     </div>
-  </a>
+  </div>
 </template>
 
 <script>

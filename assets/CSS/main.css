@@ -87,11 +87,6 @@ p{
   background-color: #ddd;
 }
 
-.Peice:focus{
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
 * {
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
@@ -154,7 +149,6 @@ ol, li {
 }
 
 .carousel__slide:before {
-  content: counter(item);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,6 +202,7 @@ ol, li {
   transition: transform 0.1s;
 }
 
+/*
 .carousel::before,
 .carousel::after,
 .carousel__prev,
@@ -222,6 +217,7 @@ ol, li {
   font-size: 0;
   outline: 0;
 }
+*/
 
 .carousel::before,
 .carousel__prev {
