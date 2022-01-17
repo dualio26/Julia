@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-full bg-black overflow-hidden shadow p-6 text-white"
-  >
+  <div class="w-full bg-black overflow-hidden shadow p-6 text-white">
     <div class="w-full mr-0">
       <h2 class="w-full text-2xl leading-7 font-semibold sm:text-center">
         Julia's ArtBoard
@@ -21,7 +19,9 @@
       <div class="MenuButtons hidden sm:grid mx-auto">
         <a @click="hideHome()"><Button /></a>
         <div class="dropdown">
-          <a id="ArtTypes" class="Arts" @click="ShowAll()"><Button title="ArtWork" /></a>
+          <a id="ArtTypes" class="Arts" @click="ShowAll()"
+            ><Button title="ArtWork"
+          /></a>
           <div class="dropdown-content rounded">
             <a @click="hideArtist()">Landscape</a>
             <a @click="hideHexagon()">Hexagon</a>
@@ -59,10 +59,13 @@ export default {
     const len = data.length
     while (i !== len) {
       const temp = artworks[i]
-      if (temp.Category === 'Hexagon') {
-        artTitles.push(temp.Blurb)
-        i++
-      }
+      const tempTitles = temp.Piece_Title
+      artTitles.push(tempTitles)
+
+      // if (temp.Category === 'Hexagon') {
+      //  artTitles.push(temp.Blurb)
+      //  i++
+      // }
       i++
     }
     console.log(artTitles)
