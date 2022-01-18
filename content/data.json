@@ -1,20 +1,20 @@
 [
  {
-   "Piece_Title": "Roses",
+   "Piece_Title": "image0",
    "Dimensions": "15.5x16.5",
    "Price": "$100.00",
    "Blurb": "This is some text for the piece of Hexagon",
    "Category": "Hexagon"
  },
  {
-   "Piece_Title": "Lank",
+   "Piece_Title": "image1",
    "Dimensions": "5x2",
    "Price": "$50.00",
    "Blurb": "This is some text for the piece of Landscape",
    "Category": "Landscape"
  },
  {
-   "Piece_Title": "Emily",
+   "Piece_Title": "image2",
    "Dimensions": "150x25",
    "Price": "$250.00",
    "Blurb": "This is some text for the piece of Portrait",

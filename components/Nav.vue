@@ -54,14 +54,13 @@ import data from '~/content/data.json'
 export default {
   mounted() {
     const artworks = data
-    const artTitles = []
+    let artTitles = ""
     let i = 0
     const len = data.length
     while (i !== len) {
       const temp = artworks[i]
-      const tempTitles = temp.Piece_Title
-      artTitles.push(tempTitles)
-
+      const tempInfo = `<div class="Peice rounded p-3 my-4 mx-auto" style="height: fit-content"><img src="_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></div> `;
+      artTitles = artTitles + tempInfo
       // if (temp.Category === 'Hexagon') {
       //  artTitles.push(temp.Blurb)
       //  i++
@@ -69,7 +68,7 @@ export default {
       i++
     }
     console.log(artTitles)
-    document.getElementById('PortraitContent').innerHTML = artTitles
+    document.getElementById('AllContent').innerHTML = artTitles
   },
   methods: {
     reload() {

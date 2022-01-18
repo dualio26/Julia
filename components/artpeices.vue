@@ -3,7 +3,7 @@
     <img
       :src="require(`../assets/images/${image}.jpg`)"
       alt="Art image"
-      class="rounded-t m-auto"
+      class="rounded m-auto"
     />
     <div class="Artinfo pt-4">
       <h1>{{ title }}</h1>

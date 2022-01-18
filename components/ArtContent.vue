@@ -4,44 +4,6 @@
       <div id="Landscape" class="Landscape hidden">
         <h1 class="text-center">Landscape</h1>
         <div id="AboutContent" class="hidden sm:grid grid-cols-3">
-          <ArtPeices
-            image="image0"
-            title="First Peice"
-            content="About the peice"
-            dimensions="(x+2)(x-2)"
-            price="123"
-          /><ArtPeices
-            image="image1"
-            title="First Peice"
-            content="About the peice"
-            dimensions="(x+2)(x-2)"
-            price="123"
-          /><ArtPeices
-            image="image2"
-            title="First Peice"
-            content="About the peice"
-            dimensions="(x+2)(x-2)"
-            price="123"
-          />
-          <ArtPeices
-            image="image0"
-            title="First Peice"
-            content="About the peice"
-            dimensions="(x+2)(x-2)"
-            price="123"
-          /><ArtPeices
-            image="image1"
-            title="First Peice"
-            content="About the peice"
-            dimensions="(x+2)(x-2)"
-            price="123"
-          /><ArtPeices
-            image="image2"
-            title="First Peice"
-            content="About the peice"
-            dimensions="(x+2)(x-2)"
-            price="123"
-          />
         </div>
       </div>
       <div id="Hexagon" class="Hexagon hidden">
@@ -54,7 +16,7 @@
       </div>
       <div id="AllArt" class="All hidden">
         <h1 class="text-center">All My Pieces</h1>
-        <p id="AllContent">all Content</p>
+        <div id="AllContent" class="block sm:grid grid-cols-3"></div>
       </div>
     </div>
   </div>
