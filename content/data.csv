@@ -1,13 +1,13 @@
 Piece_Title,Dimensions,Price,Blurb,Category
-Roses,15.5x16.5,$100.00,This is some text for the piece of art,Hexagon
+Roses,15.5x16.5,$100.00,This is some text for the piece of art,Portrait
 image0,5x2,$50.00,This is some text for the piece of art,Landscape
 image1,150x25,$250.00,This is some text for the piece of art,Portrait
-image2,,,,
-image3,,,,
-image4,,,,
-image5,,,,
-image6,,,,
-image7,,,,
-image8,,,,
-image9,,,,
-image10,,,,
+image2,,,,Portrait
+image3,,,,Hexagon
+image4,,,,Landscape
+image5,,,,Landscape
+image6,,,,Hexagon
+image7,,,,Hexagon
+image8,,,,Hexagon
+image9,,,,Landscape
+image10,,,,Portrait

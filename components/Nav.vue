@@ -54,21 +54,38 @@ import data from '~/content/data.json'
 export default {
   mounted() {
     const artworks = data
-    let artTitles = ""
+    let artTitles = ''
+    let hexInfo = ''
+    let lanInfo = ''
+    let porInfo = ''
     let i = 0
     const len = data.length
     while (i !== len) {
       const temp = artworks[i]
-      const tempInfo = `<div class="Peice rounded p-3 my-4 mx-auto" style="height: fit-content"><img src="_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></div> `;
-      artTitles = artTitles + tempInfo
-      // if (temp.Category === 'Hexagon') {
-      //  artTitles.push(temp.Blurb)
-      //  i++
-      // }
+      const tempAllInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+      artTitles = artTitles + tempAllInfo
+      if (temp.Category === 'Hexagon') {
+        const temphexInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+        hexInfo = hexInfo + temphexInfo
+      }
+      if (temp.Category === 'Landscape') {
+        const templanInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+        lanInfo = lanInfo + templanInfo
+      }
+      if (temp.Category === 'Portrait') {
+        const tempporInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+        porInfo = porInfo + tempporInfo
+      }
       i++
     }
     console.log(artTitles)
+    console.log(hexInfo)
+    console.log(lanInfo)
+    console.log(porInfo)
     document.getElementById('AllContent').innerHTML = artTitles
+    document.getElementById('HexagonContent').innerHTML = hexInfo
+    document.getElementById('LandscapeContent').innerHTML = lanInfo
+    document.getElementById('PortraitContent').innerHTML = porInfo
   },
   methods: {
     reload() {

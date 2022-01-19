@@ -85,6 +85,12 @@ p{
 
 .Peice{
   background-color: #ddd;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.Peice:traget{
+  width: 100%;
 }
 
 * {
