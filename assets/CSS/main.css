@@ -1,18 +1,27 @@
 @font-face {
   font-family: 'Cinzel';
-  src:  '../fonts/static/Cinzel-Regular.ttf';
+  src: '../fonts/static/Cinzel-Regular.ttf';
 }
 
 @font-face {
   font-family: 'CodePro';
-  src:  '../fonts/static/SourceCodePro-Medium.ttf';
+  src: '../fonts/static/SourceCodePro-Medium.ttf';
 }
 
-h1, h2, h3, h4{
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Cinzel', Courier, monospace;
 }
 
-p{
+p {
   font-family: 'CodePro', Courier, monospace;
 }
 
@@ -83,13 +92,12 @@ p{
   display: block;
 }
 
-.Peice{
+.Peice {
   background-color: #ddd;
-  flex-grow: 1;
   width: 30%;
 }
 
-.Peice:traget{
+.Peice:traget {
   width: 100%;
 }
 
@@ -116,7 +124,8 @@ p{
   -ms-overflow-style: none;
 }
 
-ol, li {
+ol,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -158,7 +167,7 @@ ol, li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-40%,70px);
+  transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 2em;
 }

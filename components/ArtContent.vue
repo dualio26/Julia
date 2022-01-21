@@ -3,7 +3,7 @@
     <div class="pt-12 mx-auto w-10/12 block">
       <div id="Landscape" class="Landscape hidden">
         <h1 class="text-center">Landscape</h1>
-        <div id="LandscapeContent" class="hidden sm:flex flex-wrap gap-4">
+        <div id="LandscapeContent" class="hidden ">
         </div>
       </div>
       <div id="Hexagon" class="Hexagon hidden">
@@ -16,7 +16,7 @@
       </div>
       <div id="AllArt" class="All hidden">
         <h1 class="text-center">All My Pieces</h1>
-        <div id="AllContent" class="hidden sm:flex flex-wrap gap-4"></div>
+        <div id="AllContent" class=""></div>
       </div>
     </div>
   </div>
