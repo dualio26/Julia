@@ -69,7 +69,7 @@ export default {
         hexInfo = hexInfo + temphexInfo
       }
       if (temp.Category === 'Landscape') {
-        const templanInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="../assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+        const templanInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
         lanInfo = lanInfo + templanInfo
       }
       if (temp.Category === 'Portrait') {
