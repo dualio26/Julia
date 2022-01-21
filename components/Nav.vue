@@ -52,7 +52,7 @@
 <script>
 import data from '~/content/data.json'
 export default {
-  mounted() {
+  fetch() {
     const artworks = data
     let artTitles = ''
     let hexInfo = ''
