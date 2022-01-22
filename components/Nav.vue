@@ -50,43 +50,43 @@
 </template>
 
 <script>
-import data from '~/content/data.json'
+// import data from '~/content/data.json'
 export default {
-  fetch() {
-    const artworks = data
-    let artTitles = ''
-    let hexInfo = ''
-    let lanInfo = ''
-    let porInfo = ''
-    let i = 0
-    const len = data.length
-    while (i !== len) {
-      const temp = artworks[i]
-      const tempAllInfo = `<div href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></div> `
-      artTitles = artTitles + tempAllInfo
-      if (temp.Category === 'Hexagon') {
-        const temphexInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-        hexInfo = hexInfo + temphexInfo
-      }
-      if (temp.Category === 'Landscape') {
-        const templanInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-        lanInfo = lanInfo + templanInfo
-      }
-      if (temp.Category === 'Portrait') {
-        const tempporInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/_nuxt/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-        porInfo = porInfo + tempporInfo
-      }
-      i++
-    }
-    console.log(artTitles)
-    console.log(hexInfo)
-    console.log(lanInfo)
-    console.log(porInfo)
-    document.getElementById('AllContent').innerHTML = artTitles
-    document.getElementById('HexagonContent').innerHTML = hexInfo
-    document.getElementById('LandscapeContent').innerHTML = lanInfo
-    document.getElementById('PortraitContent').innerHTML = porInfo
-  },
+  // mounted() {
+  //   const artworks = data
+  //   let allInfo = ''
+  //   let hexInfo = ''
+  //   let lanInfo = ''
+  //   let porInfo = ''
+  //   let i = 0
+  //   const len = data.length
+  //   while (i !== len) {
+  //     const temp = artworks[i]
+  //     const tempAllInfo =   `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+  //     allInfo = allInfo + tempAllInfo
+  //     if (temp.Category === 'Hexagon') {
+  //       const tempHexInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+  //       hexInfo = hexInfo + tempHexInfo
+  //     }
+  //     if (temp.Category === 'Landscape') {
+  //       const tempLanInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+  //       lanInfo = lanInfo + tempLanInfo
+  //     }
+  //     if (temp.Category === 'Portrait') {
+  //       const tempPorInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
+  //       porInfo = porInfo + tempPorInfo
+  //     }
+  //     i++
+  //   }
+  //   console.log(allInfo)
+  //   console.log(hexInfo)
+  //   console.log(lanInfo)
+  //   console.log(porInfo)
+  //   document.getElementById('AllContent').innerHTML = allInfo
+  //   document.getElementById('HexagonContent').innerHTML = hexInfo
+  //   document.getElementById('LandscapeContent').innerHTML = lanInfo
+  //   document.getElementById('PortraitContent').innerHTML = porInfo
+  // },
   methods: {
     reload() {
       window.location.reload()
@@ -105,6 +105,7 @@ export default {
         z.style.display = 'none'
       } else {
         x.style.display = 'none'
+        a.style.display = 'block'
       }
     },
     hideHome() {
@@ -121,6 +122,7 @@ export default {
         z.style.display = 'none'
       } else {
         x.style.display = 'none'
+        a.style.display = 'block'
       }
     },
     hideHexagon() {
@@ -137,6 +139,7 @@ export default {
         a.style.display = 'none'
       } else {
         z.style.display = 'none'
+        a.style.display = 'block'
       }
     },
     hidePortraits() {
@@ -153,6 +156,7 @@ export default {
         a.style.display = 'none'
       } else {
         y.style.display = 'none'
+        a.style.display = 'block'
       }
     },
     ShowAll() {
@@ -169,6 +173,7 @@ export default {
         a.style.display = 'block'
       } else {
         a.style.display = 'none'
+        b.style.display = 'block' 
       }
     },
   },
