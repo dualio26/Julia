@@ -16,6 +16,7 @@
       <div id="AllArt" class="All hidden">
         <h1 class="text-center">All My Pieces</h1>
         <div v-for="item in artworks" :key="item.Piece_Title">
+          <!-- file information is loaded but need to add /assets/images/ to the src -->
          <img :src="item.Piece_Title" alt=""/>
         </div>
       </div>
