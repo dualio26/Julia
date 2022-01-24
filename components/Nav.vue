@@ -8,13 +8,16 @@
     </div>
 
     <div class="mt-4 pt-4 border-t border-dashed">
-      <div class="grid grid-cols-6 place-content-center block sm:hidden">
+      <div class="grid grid-cols-5 place-content-center block sm:hidden">
         <a class="mx-auto" @click="hideHome()"
           ><i class="fas fa-home fa-lg"></i></a
-        ><i class="far fa-image mx-auto fa-lg"></i
-        ><i class="fas fa-palette mx-auto fa-lg"></i
-        ><i class="fab fa-blogger mx-auto fa-lg"></i
-        ><i class="fas fa-sms mx-auto fa-lg"></i>
+        ><i
+          class="far fa-image mx-auto fa-lg h-fit my-auto"
+          @click="ShowPhoneAll()"
+        ></i
+        ><i class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i
+        ><i class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i
+        ><i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">
         <a @click="hideHome()"><Button /></a>
@@ -33,8 +36,8 @@
         <a href="/home"><Button title="Contact" /></a>
       </div>
     </div>
-    <div class="pt-8 block sm:hidden">
-      <div class="grid grid-cols-3 gap-10 mx-auto w-2/5">
+    <div id="PhoneArtNav" class="pt-8 block hidden sm:hidden">
+      <div class="grid grid-cols-3">
         <a class="mx-auto w-fit" @click="hideArtist()"
           ><i class="fas fa-mountain fa-2x"></i
         ></a>
@@ -50,43 +53,7 @@
 </template>
 
 <script>
-// import data from '~/content/data.json'
 export default {
-  // mounted() {
-  //   const artworks = data
-  //   let allInfo = ''
-  //   let hexInfo = ''
-  //   let lanInfo = ''
-  //   let porInfo = ''
-  //   let i = 0
-  //   const len = data.length
-  //   while (i !== len) {
-  //     const temp = artworks[i]
-  //     const tempAllInfo =   `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-  //     allInfo = allInfo + tempAllInfo
-  //     if (temp.Category === 'Hexagon') {
-  //       const tempHexInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-  //       hexInfo = hexInfo + tempHexInfo
-  //     }
-  //     if (temp.Category === 'Landscape') {
-  //       const tempLanInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-  //       lanInfo = lanInfo + tempLanInfo
-  //     }
-  //     if (temp.Category === 'Portrait') {
-  //       const tempPorInfo = `<a href="#${i}" class="Peice rounded p-3 my-auto" style="height: fit-content; max-width: fit-content;"><img src="/assets/images/${temp.Piece_Title}.jpg" alt="Art image" class="rounded m-auto" /><div class="Artinfo pt-4 hidden"><h1>${temp.Piece_Title}</h1><p>${temp.Blurb}</p><p>${temp.Dimensions} mm</p><p>${temp.Price}</p></div></a> `
-  //       porInfo = porInfo + tempPorInfo
-  //     }
-  //     i++
-  //   }
-  //   console.log(allInfo)
-  //   console.log(hexInfo)
-  //   console.log(lanInfo)
-  //   console.log(porInfo)
-  //   document.getElementById('AllContent').innerHTML = allInfo
-  //   document.getElementById('HexagonContent').innerHTML = hexInfo
-  //   document.getElementById('LandscapeContent').innerHTML = lanInfo
-  //   document.getElementById('PortraitContent').innerHTML = porInfo
-  // },
   methods: {
     reload() {
       window.location.reload()
@@ -114,12 +81,14 @@ export default {
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
       const b = document.getElementById('HomeContent')
+      const c = document.getElementById('PhoneArtNav')
       if (b.style.display === 'none') {
         b.style.display = 'grid'
         a.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'none'
         z.style.display = 'none'
+        c.style.display = 'none'
       } else {
         x.style.display = 'none'
         a.style.display = 'block'
@@ -173,7 +142,26 @@ export default {
         a.style.display = 'block'
       } else {
         a.style.display = 'none'
-        b.style.display = 'block' 
+        b.style.display = 'block'
+      }
+    },
+    ShowPhoneAll() {
+      const x = document.getElementById('Landscape')
+      const y = document.getElementById('Portraits')
+      const z = document.getElementById('Hexagon')
+      const a = document.getElementById('AllArt')
+      const b = document.getElementById('HomeContent')
+      const c = document.getElementById('PhoneArtNav')
+      if (a.style.display === 'none') {
+        b.style.display = 'none'
+        x.style.display = 'none'
+        y.style.display = 'none'
+        z.style.display = 'none'
+        a.style.display = 'block'
+        c.style.display = 'block'
+      } else {
+        a.style.display = 'none'
+        b.style.display = 'block'
       }
     },
   },

@@ -9,7 +9,7 @@
       >
         <div class="carousel__snapper">
           <img
-            :src="require(`../assets/images/${image1}.jpg`)"
+            :src="`/Artwork/${image1}.jpg`"
             alt=""
             class="mx-auto"
             style="height: -webkit-fill-available"
@@ -26,7 +26,7 @@
       >
         <div class="carousel__snapper"></div>
         <img
-            :src="require(`../assets/images/${image2}.jpg`)"
+            :src="`/Artwork/${image2}.jpg`"
             alt=""
             class="mx-auto"
             style="height: -webkit-fill-available"
@@ -42,7 +42,7 @@
       >
         <div class="carousel__snapper"></div>
         <img
-            :src="require(`../assets/images/${image3}.jpg`)"
+            :src="`/Artwork/${image3}.jpg`"
             alt=""
             class="mx-auto"
             style="height: -webkit-fill-available"
@@ -58,7 +58,7 @@
       >
         <div class="carousel__snapper"></div>
         <img
-            :src="require(`../assets/images/${image4}.jpg`)"
+            :src="`/Artwork/${image4}.jpg`"
             alt=""
             class="mx-auto"
             style="height: -webkit-fill-available"
