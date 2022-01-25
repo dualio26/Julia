@@ -3,7 +3,8 @@
     <HomeCarousel image1="image0" image2="image1" image3="image2" image4="image3"/>
     <div class="pt-8">
       <h2 class="text-center text-2xl">About my Art</h2>
-      <p class="w-3/4 mx-auto pt-6">
+      <div class="block sm:grid grid-cols-2 pt-8">
+        <p class="w-3/4 mx-auto pt-6">
         Hi, My Name is Julia Sternkopf. <br />
         I am enviromental/portrait painter that is based within central otago. I
         am from Germany spenting most of my childhood drawing, painting and
@@ -14,6 +15,8 @@
         and pristine wilderness, taking the inspiration back to the studio to
         try and recreate the feeling of being out there again.
       </p>
+      <img src="ProfileImage.jpg" alt="Profile Photo">
+      </div>
     </div>
   </div>
 </template>

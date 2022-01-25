@@ -8,19 +8,22 @@
     </div>
 
     <div class="mt-4 pt-4 border-t border-dashed">
-      <div class="grid grid-cols-5 place-content-center block sm:hidden">
-        <a class="mx-auto" @click="hideHome()"
+      <div class="grid place-content-center gap-6 block sm:hidden" style="grid-template-columns: auto auto auto auto auto; ">
+        <a href="/" class="mx-auto" @click="hideHome()"
           ><i class="fas fa-home fa-lg"></i></a
         ><i
           class="far fa-image mx-auto fa-lg h-fit my-auto"
           @click="ShowPhoneAll()"
         ></i
-        ><i href="/commisions" class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i
-        ><i href="/blog" class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i
-        ><i href="/contact" class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i>
+        ><a href="/commisions" style="width: fit-content"
+          ><i class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i></a
+        ><a href="/blog" style="width: fit-content"
+          ><i class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i></a
+        ><a href="/contact" style="width: fit-content">
+        <i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i></a>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">
-        <a @click="hideHome()"><Button /></a>
+        <a href="/" @click="hideHome()"><Button /></a>
         <div class="dropdown">
           <a id="ArtTypes" class="Arts" @click="ShowAll()"
             ><Button title="ArtWork"
