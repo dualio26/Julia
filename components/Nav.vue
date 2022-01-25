@@ -15,9 +15,9 @@
           class="far fa-image mx-auto fa-lg h-fit my-auto"
           @click="ShowPhoneAll()"
         ></i
-        ><i class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i
-        ><i class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i
-        ><i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i>
+        ><i href="/commisions" class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i
+        ><i href="/blog" class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i
+        ><i href="/contact" class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">
         <a @click="hideHome()"><Button /></a>
@@ -31,9 +31,9 @@
             <a @click="hidePortraits()">Portraits</a>
           </div>
         </div>
-        <a href="/home"><Button title="Commisions" /></a>
-        <a href="/home"><Button title="Blog" /></a>
-        <a href="/home"><Button title="Contact" /></a>
+        <a href="/commisions"><Button title="Commisions" /></a>
+        <a href="/blog"><Button title="Blog" /></a>
+        <a href="/contact"><Button title="Contact" /></a>
       </div>
     </div>
     <div id="PhoneArtNav" class="pt-8 block hidden sm:hidden">

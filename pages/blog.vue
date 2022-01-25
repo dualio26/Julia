@@ -2,9 +2,9 @@
   <div>
     <div class="w-full mx-auto my-auto">
       <Nav />
+      <div>
+        
+      </div>
     </div>
-    <HomeContent /> 
-    <ArtContent />
-    <Footer />
   </div>
 </template>

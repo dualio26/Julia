@@ -1,5 +1,5 @@
 <template>
-    <button class="text-white p-1 rounded m-1">
+   <button class="text-white p-1 rounded m-1">
         <p>{{ title }}</p>
     </button>
 </template>
@@ -11,7 +11,7 @@ export default {
             type: String,
             default: "Home",
             required: false
-        }
+        },
     }
 }
 </script>
