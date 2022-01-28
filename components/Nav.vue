@@ -23,9 +23,9 @@
         <i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i></a>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">
-        <a href="/" @click="hideHome()"><Button /></a>
+        <a href="/"><Button /></a>
         <div class="dropdown">
-          <a id="ArtTypes" class="Arts" @click="ShowAll()"
+          <a id="ArtTypes" href="/Artworks" class="Arts"
             ><Button title="ArtWork"
           /></a>
           <div class="dropdown-content rounded">
@@ -66,32 +66,11 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
-      const b = document.getElementById('HomeContent')
       if (x.style.display === 'none') {
-        b.style.display = 'none'
         a.style.display = 'none'
         x.style.display = 'block'
         y.style.display = 'none'
         z.style.display = 'none'
-      } else {
-        x.style.display = 'none'
-        a.style.display = 'block'
-      }
-    },
-    hideHome() {
-      const x = document.getElementById('Landscape')
-      const y = document.getElementById('Portraits')
-      const z = document.getElementById('Hexagon')
-      const a = document.getElementById('AllArt')
-      const b = document.getElementById('HomeContent')
-      const c = document.getElementById('PhoneArtNav')
-      if (b.style.display === 'none') {
-        b.style.display = 'grid'
-        a.style.display = 'none'
-        x.style.display = 'none'
-        y.style.display = 'none'
-        z.style.display = 'none'
-        c.style.display = 'none'
       } else {
         x.style.display = 'none'
         a.style.display = 'block'
@@ -102,9 +81,7 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
-      const b = document.getElementById('HomeContent')
       if (z.style.display === 'none') {
-        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'none'
         z.style.display = 'block'
@@ -119,9 +96,7 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
-      const b = document.getElementById('HomeContent')
       if (y.style.display === 'none') {
-        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'block'
         z.style.display = 'none'
@@ -136,16 +111,13 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
-      const b = document.getElementById('HomeContent')
       if (a.style.display === 'none') {
-        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'none'
         z.style.display = 'none'
         a.style.display = 'block'
       } else {
         a.style.display = 'none'
-        b.style.display = 'block'
       }
     },
     ShowPhoneAll() {
@@ -153,10 +125,8 @@ export default {
       const y = document.getElementById('Portraits')
       const z = document.getElementById('Hexagon')
       const a = document.getElementById('AllArt')
-      const b = document.getElementById('HomeContent')
       const c = document.getElementById('PhoneArtNav')
       if (a.style.display === 'none') {
-        b.style.display = 'none'
         x.style.display = 'none'
         y.style.display = 'none'
         z.style.display = 'none'
@@ -164,7 +134,6 @@ export default {
         c.style.display = 'block'
       } else {
         a.style.display = 'none'
-        b.style.display = 'block'
       }
     },
   },

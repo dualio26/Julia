@@ -26,6 +26,10 @@ p {
   font-family: 'CodePro', Courier, monospace;
 }
 
+a{
+  color: white !important;
+}
+
 .MenuButtons {
   grid-template-columns: auto auto auto auto auto auto;
   width: fit-content;

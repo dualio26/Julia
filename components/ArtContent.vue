@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div id="AllArt" class="All hidden">
+        <div id="AllArt" class="All ">
           <h1 class="text-center">All My Pieces</h1>
           <div class="block sm:grid sm:grid-cols-3 gap-4">
             <div v-for="item in artworks" :key="item.Piece_Title">
