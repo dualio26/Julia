@@ -15,7 +15,7 @@
         and pristine wilderness, taking the inspiration back to the studio to
         try and recreate the feeling of being out there again.
       </p>
-      <img src="ProfileImage.jpg" alt="Profile Photo">
+      <img src="ProfileImage.jpg" alt="Profile Photo" class="my-auto">
       </div>
     </div>
   </div>

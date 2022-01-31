@@ -1,12 +1,6 @@
 [
   {
-    "Piece_Title": "Roses",
-    "Dimensions": "15.5x16.5",
-    "Price": "$100.00",
-    "Blurb": "This is some text for the piece of art",
-    "Category": "Portrait"
-  },
-  {
+    "ID": "1",
     "Piece_Title": "image0",
     "Dimensions": "5x2",
     "Price": "$50.00",
@@ -14,6 +8,7 @@
     "Category": "Landscape"
   },
   {
+    "ID": "2",
     "Piece_Title": "image1",
     "Dimensions": "150x25",
     "Price": "$250.00",
@@ -21,6 +16,7 @@
     "Category": "Portrait"
   },
   {
+    "ID": "3",
     "Piece_Title": "image2",
     "Dimensions": "",
     "Price": "",
@@ -28,6 +24,7 @@
     "Category": "Portrait"
   },
   {
+    "ID": "4",
     "Piece_Title": "image3",
     "Dimensions": "",
     "Price": "",
@@ -35,6 +32,7 @@
     "Category": "Hexagon"
   },
   {
+    "ID": "5",
     "Piece_Title": "image4",
     "Dimensions": "",
     "Price": "",
@@ -42,6 +40,7 @@
     "Category": "Landscape"
   },
   {
+    "ID": "6",
     "Piece_Title": "image5",
     "Dimensions": "",
     "Price": "",
@@ -49,6 +48,7 @@
     "Category": "Landscape"
   },
   {
+    "ID": "7",
     "Piece_Title": "image6",
     "Dimensions": "",
     "Price": "",
@@ -56,6 +56,7 @@
     "Category": "Hexagon"
   },
   {
+    "ID": "8",
     "Piece_Title": "image7",
     "Dimensions": "",
     "Price": "",
@@ -63,6 +64,7 @@
     "Category": "Hexagon"
   },
   {
+    "ID": "9",
     "Piece_Title": "image8",
     "Dimensions": "",
     "Price": "",
@@ -70,6 +72,7 @@
     "Category": "Hexagon"
   },
   {
+    "ID": "10",
     "Piece_Title": "image9",
     "Dimensions": "",
     "Price": "",
@@ -77,6 +80,7 @@
     "Category": "Landscape"
   },
   {
+    "ID": "11",
     "Piece_Title": "image10",
     "Dimensions": "",
     "Price": "",

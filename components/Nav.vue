@@ -8,19 +8,20 @@
     </div>
 
     <div class="mt-4 pt-4 border-t border-dashed">
-      <div class="grid place-content-center gap-6 block sm:hidden" style="grid-template-columns: auto auto auto auto auto; ">
-        <a href="/" class="mx-auto" @click="hideHome()"
-          ><i class="fas fa-home fa-lg"></i></a
-        ><i
-          class="far fa-image mx-auto fa-lg h-fit my-auto"
-          @click="ShowPhoneAll()"
-        ></i
+      <div
+        class="grid place-content-center gap-6 block sm:hidden"
+        style="grid-template-columns: auto auto auto auto auto"
+      >
+        <a href="/" class="mx-auto"><i class="fas fa-home fa-lg"></i></a
+        ><a href="/Artworks"
+          ><i class="far fa-image mx-auto fa-lg h-fit my-auto"></i></a
         ><a href="/commisions" style="width: fit-content"
           ><i class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i></a
         ><a href="/blog" style="width: fit-content"
           ><i class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i></a
         ><a href="/contact" style="width: fit-content">
-        <i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i></a>
+          <i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i
+        ></a>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">
         <a href="/"><Button /></a>
@@ -28,28 +29,10 @@
           <a id="ArtTypes" href="/Artworks" class="Arts"
             ><Button title="ArtWork"
           /></a>
-          <div class="dropdown-content rounded">
-            <a @click="hideArtist()">Landscape</a>
-            <a @click="hideHexagon()">Hexagon</a>
-            <a @click="hidePortraits()">Portraits</a>
-          </div>
         </div>
         <a href="/commisions"><Button title="Commisions" /></a>
         <a href="/blog"><Button title="Blog" /></a>
         <a href="/contact"><Button title="Contact" /></a>
-      </div>
-    </div>
-    <div id="PhoneArtNav" class="pt-8 block hidden sm:hidden">
-      <div class="grid grid-cols-3">
-        <a class="mx-auto w-fit" @click="hideArtist()"
-          ><i class="fas fa-mountain fa-2x"></i
-        ></a>
-        <a class="mx-auto w-fit" @click="hideHexagon()"
-          ><i class="fas fa-square fa-2x"></i
-        ></a>
-        <a class="mx-auto w-fit" @click="hidePortraits()"
-          ><i class="fas fa-portrait fa-2x"></i
-        ></a>
       </div>
     </div>
   </div>
