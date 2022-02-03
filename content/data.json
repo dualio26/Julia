@@ -5,7 +5,8 @@
     "Dimensions": "5x2",
     "Price": "$50.00",
     "Blurb": "This is some text for the piece of art",
-    "Category": "Landscape"
+    "Category": "Landscape",
+    "Sold": "ture"
   },
   {
     "ID": "2",
@@ -13,7 +14,8 @@
     "Dimensions": "150x25",
     "Price": "$250.00",
     "Blurb": "This is some text for the piece of art",
-    "Category": "Portrait"
+    "Category": "Portrait",
+    "Sold": "ture"
   },
   {
     "ID": "3",

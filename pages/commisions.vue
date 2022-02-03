@@ -3,6 +3,8 @@
     <div class="w-full mx-auto my-auto">
       <Nav />
     </div>
+    <h1 class="text-2xl text-center pt-8 pb-6">Commisions</h1>
+    <p class="text-center pb-12">These are peices that were completed on special request</p>
     <div v-for="item in TheInfo" :key="item.Piece_Title">
       <!-- file information is loaded but need to add /assets/images/ to the src -->
       <div

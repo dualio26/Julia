@@ -22,10 +22,18 @@
           <h2>Price:</h2>
           <p>{{ price }}</p>
         </div>
-        <div class="h-full my-auto">
-          <img :src="`/Artwork/${title}.jpg`" alt="Peice Image" />
+        <div class="h-full my-auto mx-auto relative w-full" >
+          <img :src="`/Artwork/${title}.jpg`" alt="Peice Image" class="rounded relative"/>
+          <img
+            v-if="`${sold}`"
+            src="/Artwork/SoldBanner.svg"
+            alt=""
+            class="w-inherit h-inherit absolute top-0 left-0"
+            style="height: -webkit-fill-available"
+          />
         </div>
       </div>
+      <PurButton title="Purchase" :piece="`${title}`" />
     </div>
   </div>
 </template>
@@ -55,6 +63,11 @@ export default {
       required: true,
     },
     digit: {
+      type: String,
+      default: '',
+      required: true,
+    },
+    sold: {
       type: String,
       default: '',
       required: true,

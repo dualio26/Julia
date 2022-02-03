@@ -14,22 +14,22 @@
               <!-- file information is loaded but need to add /assets/images/ to the src -->
               <a @click="ShowContentView(item.ID)"
                 ><div
-                  class="Peice rounded p-3 mx-auto my-4 sm:my-0"
+                  class="Peice rounded p-3 mx-auto my-4 sm:my-0 relative"
                   style="height: fit-content"
                 >
                   <img
                     :src="`/Artwork/${item.Piece_Title}.jpg`"
                     alt="Art image"
-                    class="rounded"
+                    class="rounded relative w-full"
                   />
-                  <div class="Artinfo pt-4 hidden">
-                    <h1>{{ item.Piece_Title }}</h1>
-                    <p>${{ item.Blurb }}</p>
-                    <p>{{ item.Dimensions }} mm</p>
-                    <p>{{ item.Price }}</p>
-                  </div>
-                </div></a
-              >
+                  <img
+                    v-if="item.Sold"
+                    src="/Artwork/SoldBanner.svg"
+                    alt=""
+                    class="w-inherit h-inherit absolute top-0 left-0"
+                    style="height: -webkit-fill-available"
+                  /></div
+              ></a>
             </div>
           </div>
         </div>
@@ -45,22 +45,22 @@
               <!-- file information is loaded but need to add /assets/images/ to the src -->
               <a @click="ShowContentView(item.ID)"
                 ><div
-                  class="Peice rounded p-3 mx-auto my-4 sm:my-0"
+                  class="Peice rounded p-3 mx-auto my-4 sm:my-0 relative"
                   style="height: fit-content"
                 >
                   <img
                     :src="`/Artwork/${item.Piece_Title}.jpg`"
                     alt="Art image"
-                    class="rounded"
+                    class="rounded relative w-full"
                   />
-                  <div class="Artinfo pt-4 hidden">
-                    <h1>{{ item.Piece_Title }}</h1>
-                    <p>${{ item.Blurb }}</p>
-                    <p>{{ item.Dimensions }} mm</p>
-                    <p>{{ item.Price }}</p>
-                  </div>
-                </div></a
-              >
+                  <img
+                    v-if="item.Sold"
+                    src="/Artwork/SoldBanner.svg"
+                    alt=""
+                    class="w-inherit h-inherit absolute top-0 left-0"
+                    style="height: -webkit-fill-available"
+                  /></div
+              ></a>
             </div>
           </div>
         </div>
@@ -76,22 +76,22 @@
               <!-- file information is loaded but need to add /assets/images/ to the src -->
               <a @click="ShowContentView(item.ID)"
                 ><div
-                  class="Peice rounded p-3 mx-auto my-4 sm:my-0"
+                  class="Peice rounded p-3 mx-auto my-4 sm:my-0 relative"
                   style="height: fit-content"
                 >
                   <img
                     :src="`/Artwork/${item.Piece_Title}.jpg`"
                     alt="Art image"
-                    class="rounded"
+                    class="rounded relative w-full"
                   />
-                  <div class="Artinfo pt-4 hidden">
-                    <h1>{{ item.Piece_Title }}</h1>
-                    <p>${{ item.Blurb }}</p>
-                    <p>{{ item.Dimensions }} mm</p>
-                    <p>{{ item.Price }}</p>
-                  </div>
-                </div></a
-              >
+                  <img
+                    v-if="item.Sold"
+                    src="/Artwork/SoldBanner.svg"
+                    alt=""
+                    class="w-inherit h-inherit absolute top-0 left-0"
+                    style="height: -webkit-fill-available"
+                  /></div
+              ></a>
             </div>
           </div>
         </div>
@@ -107,22 +107,22 @@
               <!-- file information is loaded but need to add /assets/images/ to the src -->
               <a @click="ShowContentView(item.ID)"
                 ><div
-                  class="Peice rounded p-3 mx-auto my-4 sm:my-0"
+                  class="Peice rounded p-3 mx-auto my-4 sm:my-0 relative"
                   style="height: fit-content"
                 >
                   <img
                     :src="`/Artwork/${item.Piece_Title}.jpg`"
                     alt="Art image"
-                    class="rounded"
+                    class="rounded relative w-full"
                   />
-                  <div class="Artinfo pt-4 hidden">
-                    <h1>{{ item.Piece_Title }}</h1>
-                    <p>${{ item.Blurb }}</p>
-                    <p>{{ item.Dimensions }} mm</p>
-                    <p>{{ item.Price }}</p>
-                  </div>
-                </div></a
-              >
+                  <img
+                    v-if="item.Sold"
+                    src="/Artwork/SoldBanner.svg"
+                    alt=""
+                    class="w-inherit h-inherit absolute top-0 left-0"
+                    style="height: -webkit-fill-available"
+                  /></div
+              ></a>
             </div>
           </div>
         </div>
@@ -134,6 +134,7 @@
           :dimensions="`${item.Dimensions}`"
           :content="`${item.Blurb}`"
           :price="`${item.Price}`"
+          :sold="`${item.Sold}`"
         />
       </div>
     </div>
