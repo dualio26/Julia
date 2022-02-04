@@ -6,9 +6,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <form href="mailto:eamongreen59@gmail.com">
+    <form action="mailto:eamongreen59@gmail.com" method="GET">
       <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
+        <label id="email" for="exampleFormControlInput1" name="email" >Email address</label>
         <input
           type="email"
           class="form-control"
@@ -18,9 +18,15 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Example select</label>
-        <select class="form-control" placeholder="Art Peice" required>
+        <select id="subject" class="form-control" placeholder="Art Peice" required name="subject" >
           <option value="" disabled selected hidden class="opacity-25">
-            Choose a Art Work
+            Choose an option
+          </option>
+          <option value="" class="opacity-25">
+            Commisions
+          </option>
+          <option value="" class="opacity-25">
+            Questions
           </option>
           <option v-for="item in TheInfo" :key="item.Piece_Title">
             {{ item.Piece_Title }}
@@ -30,12 +36,13 @@
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Example textarea</label>
         <textarea
-          class="form-control"
           id="exampleFormControlTextarea1"
+          class="form-control"
+          name="body"
           rows="3"
         ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary mt-12">Submit</button>
+      <input type="submit" value="Send" class="btn btn-primary mt-12" style="background-color: #d0bebdfd; border-color: #d0bebdfd; color: black; font-family: Courier, monospace;" />
     </form>
   </div>
 </template>

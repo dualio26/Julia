@@ -13,7 +13,7 @@
           ><i class="fas fa-times fa-2x"></i
         ></a>
       </div>
-      <div class="block sm:grid grid-cols-2 pt-12">
+      <div class="block h-3/4 sm:grid grid-cols-2 pt-12">
         <div class="h-full">
           <h2>Description:</h2>
           <p class="mb-12">{{ content }}</p>
@@ -24,13 +24,6 @@
         </div>
         <div class="h-full my-auto mx-auto relative w-full" >
           <img :src="`/Artwork/${title}.jpg`" alt="Peice Image" class="rounded relative"/>
-          <img
-            v-if="`${sold}`"
-            src="/Artwork/SoldBanner.svg"
-            alt=""
-            class="w-inherit h-inherit absolute top-0 left-0"
-            style="height: -webkit-fill-available"
-          />
         </div>
       </div>
       <PurButton title="Purchase" :piece="`${title}`" />
@@ -39,7 +32,6 @@
 </template>
 
 <script>
-import data from '~/content/blog.json'
 export default {
   props: {
     title: {
@@ -72,12 +64,6 @@ export default {
       default: '',
       required: true,
     },
-  },
-
-  data() {
-    return {
-      data,
-    }
   },
   methods: {
     hideView(ID) {

@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <ArtContent />
+    <ArtContent class="pb-12" />
     <Footer />
   </div>
 </template>

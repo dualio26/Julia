@@ -1,12 +1,12 @@
-ID,Piece_Title,Dimensions,Price,Blurb,Category
-1,image0,5x2,$50.00,This is some text for the piece of art,Landscape
-2,image1,150x25,$250.00,This is some text for the piece of art,Portrait
-3,image2,,,,Portrait
-4,image3,,,,Hexagon
-5,image4,,,,Landscape
-6,image5,,,,Landscape
-7,image6,,,,Hexagon
-8,image7,,,,Hexagon
-9,image8,,,,Hexagon
-10,image9,,,,Landscape
-11,image10,,,,Portrait
+ID,Piece_Title,Dimensions,Price,Blurb,Category,Sold
+1,image0,5x2,$50.00,This is some text for the piece of art,Landscape,ture
+2,image1,150x25,$250.00,This is some text for the piece of art,Portrait,ture
+3,image2,,,,Portrait,
+4,image3,,,,Hexagon,
+5,image4,,,,Landscape,
+6,image5,,,,Landscape,
+7,image6,,,,Hexagon,
+8,image7,,,,Hexagon,
+9,image8,,,,Hexagon,
+10,image9,,,,Landscape,
+11,image10,,,,Portrait,

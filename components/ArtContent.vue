@@ -2,6 +2,7 @@
   <div>
     <div id="AllContnet">
       <div class="pt-12 mx-auto w-10/12 block">
+      <p class="text-center pb-12">This page includes Peices that I have made, these include sold and unsold peices</p>
         <div id="Landscape" class="Landscape hidden">
           <h1 class="text-center pb-6">Landscape</h1>
           <div class="block sm:grid sm:grid-cols-3 gap-4">
@@ -164,9 +165,6 @@ export default {
       }
       i++
     }
-    console.log(porInfo)
-    console.log(hexInfo)
-    console.log(lanInfo)
     return {
       artworks,
       porInfo,
