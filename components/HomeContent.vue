@@ -1,6 +1,6 @@
 <template>
   <div id="HomeContent" class="pt-4 mx-auto w-10/12 block h-fit">
-    <HomeCarousel image1="image0" image2="image1" image3="image2"/>
+    <HomeCarouselV2 image1="image0" image2="image1" image3="image2"/>
     <div class="pt-12">
       <h2 class="text-center text-2xl">About my Art</h2>
       <div class="block sm:grid grid-cols-2 pt-8">
