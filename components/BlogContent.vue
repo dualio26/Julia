@@ -6,7 +6,7 @@
         <h1 id="demo-2" class="text-2xl pb-6">{{ item.Content }}...</h1>
         <p>{{ item.Content }}</p>
       </div>
-      <div>
+      <div class="h-fit my-auto">
         <img
           :src="`/Artwork/${item.Image}.jpg`"
           alt="Blog image"

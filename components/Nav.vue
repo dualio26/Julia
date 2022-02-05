@@ -12,15 +12,15 @@
         class="grid place-content-center gap-6 block sm:hidden"
         style="grid-template-columns: auto auto auto auto auto"
       >
-        <a href="/" class="mx-auto"><i class="fas fa-home fa-lg"></i></a
+        <a href="/" class="mx-auto"><i class="fas fa-home fa-lg" style="color: white;"></i></a
         ><a href="/Artworks"
-          ><i class="far fa-image mx-auto fa-lg h-fit my-auto"></i></a
+          ><i class="far fa-image mx-auto fa-lg h-fit my-auto" style="color: white;"></i></a
         ><a href="/commisions" style="width: fit-content"
-          ><i class="fas fa-palette mx-auto fa-lg h-fit my-auto"></i></a
+          ><i class="fas fa-palette mx-auto fa-lg h-fit my-auto" style="color: white;"></i></a
         ><a href="/blog" style="width: fit-content"
-          ><i class="fab fa-blogger mx-auto fa-lg h-fit my-auto"></i></a
+          ><i class="fab fa-blogger mx-auto fa-lg h-fit my-auto" style="color: white;"></i></a
         ><a href="/contact" style="width: fit-content">
-          <i class="fas fa-phone mx-auto fa-lg h-fit my-auto"></i
+          <i class="fas fa-phone mx-auto fa-lg h-fit my-auto" style="color: white;"></i
         ></a>
       </div>
       <div class="MenuButtons hidden sm:grid mx-auto">

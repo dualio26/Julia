@@ -14,7 +14,7 @@
         ></a>
       </div>
       <div class="block h-3/4 sm:grid grid-cols-2 pt-12">
-        <div class="h-full">
+        <div class="h-fit sm:h-full">
           <h2>Description:</h2>
           <p class="mb-12">{{ content }}</p>
           <h2>Dimensions:</h2>
@@ -22,8 +22,8 @@
           <h2>Price:</h2>
           <p>{{ price }}</p>
         </div>
-        <div class="h-full my-auto mx-auto relative w-full" >
-          <img :src="`/Artwork/${title}.jpg`" alt="Peice Image" class="rounded relative"/>
+        <div class="h-5/6 sm:h-full my-auto mx-auto relative w-full" >
+          <img :src="`/Artwork/${title}.jpg`" alt="Peice Image" class="rounded relative ml-auto sm:ml-0" style="height:inherit"/>
         </div>
       </div>
       <PurButton title="Purchase" :piece="`${title}`" />

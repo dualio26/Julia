@@ -1,5 +1,5 @@
 <template>
-  <button class="text-white p-4 rounded m-1 bg-black">
+  <button class="text-white p-4 rounded m-1 bg-black mt-20">
     <a
       :href="`mailto:eamongreen59@gmail.com?subject=Purchase:%20${piece}`"
       class="text-2xl"

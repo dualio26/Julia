@@ -15,7 +15,7 @@
           and pristine wilderness, taking the inspiration back to the studio to
           try and recreate the feeling of being out there again.
         </p>
-        <img src="ProfileImage.jpg" alt="Profile Photo" class="my-auto rounded">
+        <img src="ProfileImage.jpg" alt="Profile Photo" class="my-auto rounded pt-8 sm:pt-0">
       </div>
     </div>
   </div>
