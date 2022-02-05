@@ -1,12 +1,12 @@
 <template>
   <div>
-  <input type="radio" name="position" />
-  <input type="radio" name="position" checked />
-  <input type="radio" name="position" />
+  <input type="radio" name="position" hidden />
+  <input type="radio" name="position" checked hidden />
+  <input type="radio" name="position" hidden />
   <main id="carousel">
-    <div class="item"><img src="/Artwork/image0.jpg" alt="" class="my-auto" style="justify-content:center;align-items:center;"></div>
-    <div class="item"><img src="/Artwork/image1.jpg" alt="" class="my-auto"></div>
-    <div class="item"><img src="/Artwork/image2.jpg" alt="" class="my-auto"></div>
+    <div class="item"><img :src="`/Artwork/${image1}.jpg`" alt="" class="my-auto" style="justify-content:center;align-items:center;"></div>
+    <div class="item"><img :src="`/Artwork/${image2}.jpg`" alt="" class="my-auto"></div>
+    <div class="item"><img :src="`/Artwork/${image3}.jpg`" alt="" class="my-auto"></div>
     </main>
   </div>
 </template>
