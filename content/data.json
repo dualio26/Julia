@@ -1,0 +1,92 @@
+[
+  {
+    "ID": "1",
+    "Piece_Title": "image0",
+    "Dimensions": "5x2",
+    "Price": "$50.00",
+    "Blurb": "This is some text for the piece of art",
+    "Category": "Landscape",
+    "Sold": "ture"
+  },
+  {
+    "ID": "2",
+    "Piece_Title": "image1",
+    "Dimensions": "150x25",
+    "Price": "$250.00",
+    "Blurb": "This is some text for the piece of art",
+    "Category": "Portrait",
+    "Sold": "ture"
+  },
+  {
+    "ID": "3",
+    "Piece_Title": "image2",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Portrait"
+  },
+  {
+    "ID": "4",
+    "Piece_Title": "image3",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Hexagon"
+  },
+  {
+    "ID": "5",
+    "Piece_Title": "image4",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Landscape"
+  },
+  {
+    "ID": "6",
+    "Piece_Title": "image5",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Landscape"
+  },
+  {
+    "ID": "7",
+    "Piece_Title": "image6",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Hexagon"
+  },
+  {
+    "ID": "8",
+    "Piece_Title": "image7",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Hexagon"
+  },
+  {
+    "ID": "9",
+    "Piece_Title": "image8",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Hexagon"
+  },
+  {
+    "ID": "10",
+    "Piece_Title": "image9",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Landscape"
+  },
+  {
+    "ID": "11",
+    "Piece_Title": "image10",
+    "Dimensions": "",
+    "Price": "",
+    "Blurb": "",
+    "Category": "Portrait"
+  }
+]

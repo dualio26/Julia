@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg824"
+   width="240"
+   height="261"
+   viewBox="0 0 240 261"
+   sodipodi:docname="Logo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs828" />
+  <sodipodi:namedview
+     id="namedview826"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="2.2621999"
+     inkscape:cx="24.312618"
+     inkscape:cy="123.5523"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Art" />
+  <g
+     id="Art">
+    <path
+       style="fill:none;stroke:#d0bebd;stroke-width:9.44882;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992157"
+       d="M 73.79908,84.752213 C 72.686207,89.114708 81.003063,98.096639 86.770937,96.161195 116.36534,86.230622 256.65986,-19.065845 216.95837,9.1090987 115.29138,68.927174 40.64259,204.19337 63.796686,256.66838"
+       id="path947"
+       sodipodi:nodetypes="cscc" />
+    <path
+       style="fill:none;stroke:#d0bebd;stroke-width:9.44882;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992157"
+       d="m 108.80746,148.98635 c -3.6419,-13.112 4.43185,-34.00343 -24.380834,-33.13294 -23.573462,9.23961 9.488325,50.26078 16.143944,61.76193 12.77653,22.07831 -13.455994,40.6662 -20.353755,20.25311 -8.382341,-24.80653 -25.779015,-97.15519 -58.617734,-74.20066 -25.7328911,17.98749 9.882068,67.37664 24.693412,42.66646"
+       id="path2611"
+       sodipodi:nodetypes="ccsssc" />
+  </g>
+  <g
+     id="Star">
+    <path
+       style="fill:none;fill-opacity:0;stroke:#d0bebd;stroke-width:2.89134;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992157"
+       d="m 185.23201,83.501913 c -21.18627,12.688223 -24.43205,31.933847 -29.06945,51.887427 -2.06387,-14.01876 -4.06531,-28.05313 -9.37725,-41.259882 10.41715,6.996872 19.99458,14.473592 27.50659,23.130542 -13.7012,-3.55412 -26.77725,3.43418 -40.47844,8.75209 6.62611,-10.38866 19.84999,-20.71031 39.38442,-28.600596"
+       id="path5343"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+</svg>
