@@ -6,7 +6,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <form action="mailto:eamongreen59@gmail.com" method="GET">
+    <form action="mailto:juliasternkopfart@gmail.com" method="GET">
       <div class="form-group">
         <label id="email" for="exampleFormControlInput1" name="email" >Email address</label>
         <input
