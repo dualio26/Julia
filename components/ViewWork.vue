@@ -95,7 +95,7 @@ export default {
   margin-left: 96%;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .Close {
     margin-left: 80%;
   }
