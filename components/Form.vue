@@ -6,7 +6,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <form action="mailto:juliasternkopfart@gmail.com" method="GET">
+    <form action="mailto:juliasternkopfart@gmail.com" method="GET" enctype="text/plain">
       <div class="form-group">
         <label id="email" for="exampleFormControlInput1" name="email" >Email address</label>
         <input
@@ -17,7 +17,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Example select</label>
+        <label for="exampleFormControlSelect1">Select  an option</label>
         <select id="subject" class="form-control" placeholder="Art Peice" required name="subject" >
           <option value="" disabled selected hidden class="opacity-25">
             Choose an option
@@ -33,7 +33,7 @@
           </option>
         </select>
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="exampleFormControlTextarea1">Example textarea</label>
         <textarea
           id="exampleFormControlTextarea1"
@@ -41,7 +41,7 @@
           name="body"
           rows="3"
         ></textarea>
-      </div>
+      </div> -->
       <input type="submit" value="Send" class="btn btn-primary mt-12" style="background-color: #d0bebdfd; border-color: #d0bebdfd; color: black; font-family: Courier, monospace;" />
     </form>
   </div>
